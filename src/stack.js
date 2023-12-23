@@ -17,19 +17,20 @@ const { NotImplementedError } = require('../extensions/index.js');
 
 class Stack {
 
+  constructor () {
+    this.stack = [];
+  }
+
   push(element) {
-    let stack = new Stack();
-    this.stack.push(element);
+    this.stack.push(element)
   };
 
   pop() {
-    let stack = new Stack();
-    this.stack.push()
+   return this.stack.pop();
   }
 
   peek() {
-    let stack = new Stack();
-    this.stack.peek()
+     return this.stack[this.stack.length-1];
   }
 }
 
